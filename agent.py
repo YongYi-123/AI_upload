@@ -52,7 +52,7 @@ def load_credentials():
 
 # === GPT 設定 ===
 client = OpenAI(
-    api_key="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",  # ✅ 換成你的 OpenRouter 金鑰
+    api_key=os.environ.get("OPENROUTER_API_KEY"),
     base_url="https://openrouter.ai/api/v1"
 )
 
